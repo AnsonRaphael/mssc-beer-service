@@ -18,6 +18,7 @@
 		<jaxb.version>2.3.0</jaxb.version>
 		<java.version>11</java.version>
 		<org.mapstruct.version>1.4.2.Final</org.mapstruct.version>
+		<spring-statemachine.version>3.0.1</spring-statemachine.version>
 	</properties>
 
 	<dependencies>
@@ -39,6 +40,11 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.statemachine</groupId>
+			<artifactId>spring-statemachine-starter</artifactId>
+			<version>${spring-statemachine.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

@@ -2,7 +2,7 @@ package com.nanos.msscbeerservice.services.brewing;
 
 import com.nanos.msscbeerservice.config.JmsConfig;
 import com.nanos.msscbeerservice.domain.Beer;
-import com.nanos.common.events.BrewBeerEvent;
+import com.nanos.brewery.model.events.BrewBeerEvent;
 import com.nanos.msscbeerservice.repositories.BeerRepository;
 import com.nanos.msscbeerservice.services.inventory.BeerInventoryService;
 import com.nanos.msscbeerservice.web.mappers.BeerMapper;
@@ -31,6 +31,7 @@ public class BrewingService {
         for (Beer beer : beers){
             Integer quantityOnHand= beerInventoryService.getOnhandInventory(beer.getBeerId());
             Integer minOnHand=beer.getMinOnHand();
+            log.debug("Checking Inventory for: " + beer.getBeerName() + " / " + beer.getBeerId());
             log.debug("Min Onhand is: " + minOnHand);
             log.debug("Inventory is: "  + quantityOnHand);
 

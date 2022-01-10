@@ -2,8 +2,8 @@ package com.nanos.msscbeerservice.services.brewing;
 
 import com.nanos.msscbeerservice.config.JmsConfig;
 import com.nanos.msscbeerservice.domain.Beer;
-import com.nanos.common.events.BrewBeerEvent;
-import com.nanos.common.events.NewInventoryEvent;
+import com.nanos.brewery.model.events.BrewBeerEvent;
+import com.nanos.brewery.model.events.NewInventoryEvent;
 import com.nanos.msscbeerservice.repositories.BeerRepository;
 import com.nanos.msscbeerservice.web.model.BeerDto;
 import lombok.RequiredArgsConstructor;

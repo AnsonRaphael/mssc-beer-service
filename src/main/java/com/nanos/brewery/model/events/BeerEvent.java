@@ -1,4 +1,4 @@
-package com.nanos.common.events;
+package com.nanos.brewery.model.events;
 
 import com.nanos.msscbeerservice.web.model.BeerDto;
 import lombok.*;
