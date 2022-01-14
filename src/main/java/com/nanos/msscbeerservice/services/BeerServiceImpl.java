@@ -22,7 +22,8 @@ import java.util.stream.Collectors;
 public class BeerServiceImpl implements BeerService{
     BeerMapper beerMapper;
     BeerRepository beerRepository;
-
+    public final static String BEER_PATH_V1 = "/api/v1/beer/";
+    public final static String BEER_UPC_PATH_V1 = "/api/v1/beerUpc/";
     @Override
     public BeerPagedList listBeers(String beerName, BeerStyleEnum beerStyle, PageRequest pageRequest,Boolean showInventoryOnHand) {
 
